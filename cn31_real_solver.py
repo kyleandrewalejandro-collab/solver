@@ -1,8 +1,8 @@
-# Fixed cn31_real_solver.py
+# cn31_real_solver.py -- CORRECTED
 import os
 import sys
 
-# Point token saves at your necap server
+# Set TOKEN_SERVER_URL env var (use TOKEN_SERVER_URL not URL string as key)
 os.environ.setdefault(
     "TOKEN_SERVER_URL",
     os.environ.get("TOKEN_SERVER_URL", "http://localhost:6000")
