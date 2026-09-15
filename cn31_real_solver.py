@@ -1,10 +1,11 @@
+# Fixed cn31_real_solver.py
 import os
 import sys
 
 # Point token saves at your necap server
 os.environ.setdefault(
-    "https://cn31-server-production-020c.up.railway.app/domain",
-    os.environ.get("https://cn31-server-production-020c.up.railway.app/domain", "http://localhost:6000")
+    "TOKEN_SERVER_URL",
+    os.environ.get("TOKEN_SERVER_URL", "http://localhost:6000")
 )
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
