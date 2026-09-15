@@ -33,7 +33,7 @@ USE_CUDA = True if torch.cuda.is_available() else False
 DEVICE = 'cuda' if USE_CUDA else 'cpu'
 
 TOKEN_SERVER_URL = os.environ.get('TOKEN_SERVER_URL', 'https://cn31-server-production-020c.up.railway.app')
-TOKEN_SAVE_ENDPOINT = f"{TOKEN_SERVER_URL}/api/save-token"
+TOKEN_SAVE_ENDPOINT = f"cn31-server-production-020c.up.railway.app/api/save-token"
 
 def send_token_to_server(token):
     try:
