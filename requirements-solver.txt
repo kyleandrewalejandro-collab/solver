@@ -1,9 +1,0 @@
-requests>=2.31.0
-torch>=2.0.0
-torchvision>=0.15.0
-opencv-python>=4.8.0
-numpy>=1.24.0
-execjs>=1.6.1
-loguru>=0.7.0
-fake-useragent>=1.4.0
-Pillow>=10.0.0
